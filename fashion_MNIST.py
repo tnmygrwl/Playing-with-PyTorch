@@ -57,4 +57,4 @@ for e in range(epochs):
 
 # find probabilities
 
-torch.exp(model(images[2].resize_(1, 784)))
+torch.exp(model(images[2].resize_(1, 784)))  # for images[2]
