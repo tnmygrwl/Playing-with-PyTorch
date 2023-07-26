@@ -26,7 +26,7 @@ criterion = nn.NLLLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.005)
 
 epochs = 10
-for e in range(epochs):
+for _ in range(epochs):
     running_loss = 0
     for images, labels in trainloader:
         # Flatten MNIST images into a 784 long vector
