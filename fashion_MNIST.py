@@ -74,10 +74,12 @@ for e in range(epochs):
         train_losses.append(running_loss / len(trainloader))
         test_losses.append(test_loss / len(testloader))
 
-        print("Epoch: {}/{}.. ".format(e + 1, epochs),
-              "Training Loss: {:.3f}.. ".format(running_loss / len(trainloader)),
-              "Test Loss: {:.3f}.. ".format(test_loss / len(testloader)),
-              "Test Accuracy: {:.3f}".format(accuracy / len(testloader)))
+        print(
+            f"Epoch: {e + 1}/{epochs}.. ",
+            "Training Loss: {:.3f}.. ".format(running_loss / len(trainloader)),
+            "Test Loss: {:.3f}.. ".format(test_loss / len(testloader)),
+            "Test Accuracy: {:.3f}".format(accuracy / len(testloader)),
+        )
 
 # Inference
 
